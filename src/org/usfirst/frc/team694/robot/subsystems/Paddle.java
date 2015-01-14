@@ -12,6 +12,8 @@ public class Paddle extends Subsystem {
     
     public Paddle() {
     	servo = new Servo(10);
+    	
+    	rotateBackward();
     }
     
     public void initDefaultCommand() {
@@ -25,9 +27,5 @@ public class Paddle extends Subsystem {
     
     public void rotateBackward() {
     	servo.set(1.0);
-    }
-    
-    public boolean isForward() {
-    	return servo.get() <= 0.1;
     }
 }
