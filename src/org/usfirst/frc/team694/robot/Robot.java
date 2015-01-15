@@ -7,6 +7,7 @@ import edu.wpi.first.wpilibj.command.Scheduler;
 import edu.wpi.first.wpilibj.livewindow.LiveWindow;
 
 import org.usfirst.frc.team694.robot.commands.PaddleFlip;
+import org.usfirst.frc.team694.robot.subsystems.Drivetrain;
 import org.usfirst.frc.team694.robot.subsystems.Paddle;
 
 /**
@@ -19,6 +20,8 @@ import org.usfirst.frc.team694.robot.subsystems.Paddle;
 public class Robot extends IterativeRobot {
 
 	public static final Paddle paddle = new Paddle();
+	public static final Drivetrain drivetrain = new Drivetrain();
+	
 	public static OI oi;
 
     Command autonomousCommand;

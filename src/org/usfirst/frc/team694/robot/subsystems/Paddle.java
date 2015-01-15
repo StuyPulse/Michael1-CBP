@@ -1,5 +1,7 @@
 package org.usfirst.frc.team694.robot.subsystems;
 
+import org.usfirst.frc.team694.robot.RobotMap;
+
 import edu.wpi.first.wpilibj.command.Subsystem;
 import edu.wpi.first.wpilibj.Servo;
 
@@ -11,7 +13,7 @@ public class Paddle extends Subsystem {
     Servo servo;
     
     public Paddle() {
-    	servo = new Servo(10);
+    	servo = new Servo(RobotMap.PADDLE_SERVO_CHANNEL);
     	
     	rotateBackward();
     }

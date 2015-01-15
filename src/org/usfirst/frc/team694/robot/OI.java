@@ -38,8 +38,8 @@ public class OI {
     // until it is finished as determined by it's isFinished method.
     // button.whenReleased(new ExampleCommand());
 	
-	Joystick leftStick = new Joystick(0);
-	Joystick rightStick = new Joystick(1);
+	public Joystick leftStick = new Joystick(0);
+	public Joystick rightStick = new Joystick(1);
 	
 	public OI() {
 		new JoystickButton(rightStick, 3).whenPressed(new PaddleFlip());
