@@ -9,7 +9,6 @@ import edu.wpi.first.wpilibj.command.Subsystem;
 
 public class RoboSensors extends Subsystem {
 
-    //AxisCamera camera;
     Gyro betaGyro = new Gyro(Constants.GYRO_CHANNEL);
     BuiltInAccelerometer roboAccelerometer = new BuiltInAccelerometer();
 
