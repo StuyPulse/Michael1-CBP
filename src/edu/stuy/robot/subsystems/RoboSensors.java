@@ -1,7 +1,7 @@
-package org.usfirst.frc694.robot.subsystems;
+package edu.stuy.robot.subsystems;
 
-import org.usfirst.frc694.robot.Constants;
-import org.usfirst.frc694.robot.commands.ResetSensors;
+import edu.stuy.robot.Constants;
+import edu.stuy.robot.commands.ResetSensors;
 
 import edu.wpi.first.wpilibj.BuiltInAccelerometer;
 import edu.wpi.first.wpilibj.Gyro;

@@ -1,7 +1,7 @@
-package org.usfirst.frc694.robot.subsystems;
+package edu.stuy.robot.subsystems;
 
-import org.usfirst.frc694.robot.Constants;
-import org.usfirst.frc694.robot.commands.*;
+import edu.stuy.robot.Constants;
+import edu.stuy.robot.commands.*;
 
 import edu.wpi.first.wpilibj.Compressor;
 import edu.wpi.first.wpilibj.Solenoid;
