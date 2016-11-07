@@ -1,15 +1,14 @@
 package edu.stuy.robot.subsystems;
 
-import edu.stuy.robot.Constants;
 import edu.stuy.robot.commands.ResetSensors;
 
 import edu.wpi.first.wpilibj.BuiltInAccelerometer;
-import edu.wpi.first.wpilibj.Gyro;
+import edu.wpi.first.wpilibj.ADXRS450_Gyro;
 import edu.wpi.first.wpilibj.command.Subsystem;
 
 public class RoboSensors extends Subsystem {
 
-    Gyro betaGyro = new Gyro(Constants.GYRO_CHANNEL);
+    ADXRS450_Gyro betaGyro = new ADXRS450_Gyro();
     BuiltInAccelerometer roboAccelerometer = new BuiltInAccelerometer();
 
     public void initDefaultCommand() {
