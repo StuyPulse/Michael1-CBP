@@ -1,19 +1,24 @@
-package org.usfirst.frc.team694.robot.commands;
+package org.usfirst.frc694.robot.commands;
 
+import org.usfirst.frc694.robot.Robot;
+
+import edu.wpi.first.wpilibj.SensorBase;
 import edu.wpi.first.wpilibj.command.Command;
 
 /**
  *
  */
-public class ShooterVomit extends Command {
+public class ResetSensors extends Command {
 
-    public ShooterVomit() {
+    public ResetSensors() {
         // Use requires() here to declare subsystem dependencies
         // eg. requires(chassis);
+        requires(Robot.sensors);
     }
 
     // Called just before this Command runs the first time
     protected void initialize() {
+        Robot.sensors.reset();
     }
 
     // Called repeatedly when this Command is scheduled to run
